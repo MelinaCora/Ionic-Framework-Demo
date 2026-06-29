@@ -1,0 +1,7 @@
+{
+  "name": "IonicFramework",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
