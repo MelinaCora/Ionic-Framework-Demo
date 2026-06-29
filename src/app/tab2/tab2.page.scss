@@ -1,0 +1,322 @@
+/*=========================================================
+ TAB 2 - COMPONENTES IONIC
+=========================================================*/
+
+ion-content{
+
+  --background:linear-gradient(
+    180deg,
+    #081225 0%,
+    #12284b 100%
+  );
+
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+
+ion-header{
+
+  box-shadow:none;
+
+}
+
+ion-toolbar{
+
+  --background:rgba(8,18,37,.72);
+
+  backdrop-filter:blur(18px);
+
+  border-bottom:1px solid rgba(0,212,255,.25);
+
+}
+
+.toolbar-content{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:12px 18px;
+
+}
+
+.app-title{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  color:white;
+
+  margin:0;
+
+  font-size:24px;
+
+}
+
+.app-title ion-icon{
+
+  color:#37dfff;
+
+  font-size:30px;
+
+  filter:drop-shadow(0 0 12px #00d4ff);
+
+}
+
+.app-subtitle{
+
+  display:block;
+
+  margin-top:4px;
+
+  color:#8edcff;
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+.version-chip{
+
+  padding:8px 15px;
+
+  border-radius:30px;
+
+  font-weight:bold;
+
+  color:#6ef3ff;
+
+  background:rgba(0,212,255,.08);
+
+  border:1px solid #32d9ff;
+
+  box-shadow:0 0 12px rgba(0,212,255,.35);
+
+}
+
+/*=========================================================
+ CONTENEDOR
+=========================================================*/
+
+.page-container{
+
+  padding:24px;
+
+}
+
+/*=========================================================
+ HERO
+=========================================================*/
+
+.hero-card{
+
+  background:rgba(255,255,255,.08);
+
+  backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,.12);
+
+  border-radius:26px;
+
+  padding:32px;
+
+  text-align:center;
+
+  box-shadow:
+    0 10px 35px rgba(0,0,0,.45);
+
+}
+
+.hero-icon{
+
+  font-size:95px;
+
+  color:#37dfff;
+
+  filter:drop-shadow(0 0 20px #00d4ff);
+
+  margin-bottom:20px;
+
+}
+
+.hero-card h1{
+
+  color:white;
+
+  font-size:32px;
+
+  margin-bottom:8px;
+
+}
+
+.hero-card h2{
+
+  color:#66d9ff;
+
+  font-size:20px;
+
+  margin-bottom:18px;
+
+}
+
+.hero-card p{
+
+  color:#d9ecff;
+
+  line-height:1.7;
+
+}
+
+/*=========================================================
+ CARDS
+=========================================================*/
+
+.component-card{
+
+  position:relative;
+
+  overflow:hidden;
+
+  margin-top:22px;
+
+  border-radius:22px;
+
+  background:rgba(255,255,255,.08);
+
+  backdrop-filter:blur(14px);
+
+  border:1px solid rgba(255,255,255,.12);
+
+  transition:.35s;
+
+  box-shadow:
+
+    0 8px 20px rgba(0,0,0,.35);
+
+}
+
+/* Barra luminosa superior */
+
+.component-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+
+  left:0;
+
+  width:100%;
+
+  height:3px;
+
+  background:linear-gradient(
+    90deg,
+    #00d4ff,
+    #6c63ff,
+    #00d4ff
+  );
+
+  box-shadow:0 0 15px #00d4ff;
+
+}
+
+/* Hover */
+
+.component-card:hover{
+
+  transform:translateY(-6px);
+
+  box-shadow:
+
+    0 0 28px rgba(0,212,255,.28);
+
+}
+
+/*=========================================================
+ COMPONENTE
+=========================================================*/
+
+.component{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+
+}
+
+.component-icon{
+
+  font-size:42px;
+
+  color:#39dfff;
+
+  min-width:42px;
+
+  filter:drop-shadow(0 0 12px #00d4ff);
+
+}
+
+.component h3{
+
+  margin:0;
+
+  color:white;
+
+  font-size:20px;
+
+}
+
+.component p{
+
+  margin-top:8px;
+
+  color:#d8ebff;
+
+  line-height:1.6;
+
+}
+
+/*=========================================================
+ ANIMACIÓN
+=========================================================*/
+
+.hero-card,
+.component-card{
+
+  animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+  }
+
+}

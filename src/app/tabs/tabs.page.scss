@@ -1,1 +1,85 @@
 
+/*====================================================
+ TAB BAR FUTURISTA
+====================================================*/
+
+ion-tab-bar{
+
+  --background: rgba(8,18,37,.75);
+
+  backdrop-filter: blur(18px);
+
+  border-top:1px solid rgba(0,212,255,.25);
+
+  box-shadow:
+    0 -5px 25px rgba(0,212,255,.18);
+
+  height:72px;
+
+  padding-bottom:8px;
+
+}
+
+/* Botones */
+
+ion-tab-button{
+
+  --color:#8dbbff;
+
+  --color-selected:#4fdcff;
+
+  background:transparent;
+
+  transition:.35s;
+
+}
+
+/* Iconos */
+
+ion-tab-button ion-icon{
+
+  font-size:24px;
+
+  transition:.35s;
+
+}
+
+/* Texto */
+
+ion-tab-button ion-label{
+
+  font-size:12px;
+
+  letter-spacing:1px;
+
+}
+
+/* Cuando está seleccionada */
+
+ion-tab-button.tab-selected{
+
+  color:#4fdcff;
+
+}
+
+ion-tab-button.tab-selected ion-icon{
+
+  filter:drop-shadow(0 0 10px #00e5ff);
+
+  transform:translateY(-2px) scale(1.1);
+
+}
+
+ion-tab-button.tab-selected ion-label{
+
+  color:#6ef3ff;
+
+}
+
+/* Hover (solo navegador) */
+
+ion-tab-button:hover{
+
+  background:rgba(0,212,255,.08);
+
+}
