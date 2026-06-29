@@ -1,0 +1,385 @@
+/* ==========================================================
+   TAB 1 - HOME
+   Pantalla de presentación de Ionic Framework
+========================================================== */
+
+ion-content{
+
+  --background:
+  radial-gradient(circle at top,#2f7dff40,transparent 40%),
+  radial-gradient(circle at bottom,#b026ff30,transparent 40%),
+  linear-gradient(180deg,#040814,#091224,#050816);
+
+}
+
+.background-glow{
+
+  position:fixed;
+
+  inset:0;
+
+  background-image:
+  linear-gradient(rgba(0,255,255,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(0,255,255,.04) 1px,transparent 1px);
+
+  background-size:40px 40px;
+
+  opacity:.25;
+
+  pointer-events:none;
+
+}
+
+.home-container{
+
+  padding:22px;
+
+}
+
+.hero-card{
+
+  text-align:center;
+
+  padding:35px;
+
+  border-radius:25px;
+
+  background:rgba(10,15,35,.65);
+
+  backdrop-filter:blur(12px);
+
+  border:1px solid rgba(0,255,255,.25);
+
+  box-shadow:
+
+  0 0 15px #00d4ff,
+
+  0 0 50px rgba(0,212,255,.15);
+
+}
+
+.hero-icon{
+
+  font-size:120px;
+
+  color:#4fdcff;
+
+  filter:drop-shadow(0 0 18px #00e5ff);
+
+}
+
+.badge{
+
+  display:inline-block;
+
+  margin-top:10px;
+
+  padding:6px 14px;
+
+  border-radius:30px;
+
+  background:#13284d;
+
+  color:#6ef3ff;
+
+  border:1px solid #32d9ff;
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+}
+
+h1{
+
+  color:white;
+
+  font-size:38px;
+
+  margin-top:20px;
+
+}
+
+h2{
+
+  color:#57d8ff;
+
+}
+
+p{
+
+  color:#cfd8ff;
+
+  line-height:1.7;
+
+}
+
+.cards-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:14px;
+
+  margin-top:28px;
+
+}
+
+.feature-card{
+
+  text-align:center;
+
+  background:#081225;
+
+  border-radius:20px;
+
+  color:white;
+
+  border:1px solid;
+
+  transition:.3s;
+
+}
+
+.feature-card:hover{
+
+  transform:translateY(-6px);
+
+}
+
+.blue{
+
+  border-color:#00d4ff;
+
+  box-shadow:0 0 15px #00d4ff55;
+
+}
+
+.purple{
+
+  border-color:#b026ff;
+
+  box-shadow:0 0 15px #b026ff55;
+
+}
+
+.cyan{
+
+  border-color:#32ffe6;
+
+  box-shadow:0 0 15px #32ffe655;
+
+}
+
+.pink{
+
+  border-color:#ff3de2;
+
+  box-shadow:0 0 15px #ff3de255;
+
+}
+
+.icon-circle{
+
+  width:55px;
+
+  height:55px;
+
+  border-radius:50%;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  margin:auto;
+
+  font-size:26px;
+
+  background:#142446;
+
+  box-shadow:0 0 15px cyan;
+
+}
+
+.feature-card h3{
+
+  color:white;
+
+  margin-top:18px;
+
+}
+
+.feature-card p{
+
+  color:#b8c7e8;
+
+  font-size:14px;
+
+}
+
+.tech-card{
+
+  margin-top:25px;
+
+  background:#081225;
+
+  border-radius:22px;
+
+  border:1px solid #00d4ff;
+
+  box-shadow:0 0 20px rgba(0,212,255,.3);
+
+}
+
+.tech-card h3{
+
+  color:#4fdcff;
+
+  text-align:center;
+
+  letter-spacing:3px;
+
+}
+
+.tech-list{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:10px;
+
+  margin-top:20px;
+
+}
+
+.tech-list span{
+
+  padding:8px 15px;
+
+  border-radius:30px;
+
+  background:#142446;
+
+  color:#6ef3ff;
+
+  border:1px solid #32d9ff;
+
+}
+
+.start-button{
+
+  margin-top:28px;
+
+  height:58px;
+
+  font-size:18px;
+
+  font-weight:bold;
+
+  --background:linear-gradient(90deg,#0099ff,#7b2cff,#ff00d4);
+
+  --border-radius:20px;
+
+  letter-spacing:2px;
+
+  box-shadow:0 0 25px #00d4ff;
+
+}
+
+/*==========================
+ HEADER FUTURISTA
+==========================*/
+
+ion-header{
+
+  box-shadow:none;
+
+}
+
+ion-toolbar{
+
+  --background:rgba(8,18,37,.70);
+
+  backdrop-filter:blur(18px);
+
+  border-bottom:1px solid rgba(0,212,255,.25);
+
+}
+
+.toolbar-content{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:12px 18px;
+
+}
+
+.app-title{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  color:white;
+
+  font-size:24px;
+
+  margin:0;
+
+}
+
+.app-title ion-icon{
+
+  color:#37dfff;
+
+  font-size:32px;
+
+  filter:drop-shadow(0 0 12px #00e5ff);
+
+}
+
+.app-subtitle{
+
+  display:block;
+
+  margin-top:4px;
+
+  color:#8edcff;
+
+  font-size:12px;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+.version-chip{
+
+  padding:8px 14px;
+
+  border-radius:30px;
+
+  font-weight:bold;
+
+  color:#6ef3ff;
+
+  background:rgba(0,212,255,.08);
+
+  border:1px solid #32d9ff;
+
+  box-shadow:0 0 12px rgba(0,212,255,.35);
+
+}

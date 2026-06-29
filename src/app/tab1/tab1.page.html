@@ -1,17 +1,159 @@
-<ion-header [translucent]="true">
+<ion-header class="custom-header">
+
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+
+    <div class="toolbar-content">
+
+      <div>
+
+        <h1 class="app-title">
+          <ion-icon name="logo-ionic"></ion-icon>
+          Ionic Framework
+        </h1>
+
+        <span class="app-subtitle">
+          Angular • Capacitor • TypeScript
+        </span>
+
+      </div>
+
+      <div class="version-chip">
+        v8
+      </div>
+
+    </div>
+
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="background-glow"></div>
+
+  <div class="home-container">
+
+    <div class="hero-card">
+
+      <ion-icon
+        name="logo-ionic"
+        class="hero-icon">
+      </ion-icon>
+
+      <span class="badge">IONIC 8 + ANGULAR</span>
+
+      <h1>Ionic Framework</h1>
+
+      <h2>Desarrollo Multiplataforma</h2>
+
+      <p>
+        Ionic permite crear aplicaciones Android, iOS y Web utilizando
+        una única base de código basada en tecnologías web modernas.
+      </p>
+
+    </div>
+
+    <div class="cards-grid">
+
+      <ion-card class="feature-card blue">
+
+        <ion-card-content>
+
+          <div class="icon-circle">🚀</div>
+
+          <h3>Rápido</h3>
+
+          <p>
+            Desarrollo ágil con componentes listos para utilizar.
+          </p>
+
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card class="feature-card purple">
+
+        <ion-card-content>
+
+          <div class="icon-circle">📦</div>
+
+          <h3>Multiplataforma</h3>
+
+          <p>
+            Android, iOS y Web con una sola base de código.
+          </p>
+
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card class="feature-card cyan">
+
+        <ion-card-content>
+
+          <div class="icon-circle">📱</div>
+
+          <h3>Nativo</h3>
+
+          <p>
+            Capacitor conecta la app con las APIs del dispositivo.
+          </p>
+
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card class="feature-card pink">
+
+        <ion-card-content>
+
+          <div class="icon-circle">⚡</div>
+
+          <h3>Open Source</h3>
+
+          <p>
+            Comunidad enorme y cientos de plugins disponibles.
+          </p>
+
+        </ion-card-content>
+
+      </ion-card>
+
+    </div>
+
+    <ion-card class="tech-card">
+
+      <ion-card-content>
+
+        <h3>TECNOLOGÍAS</h3>
+
+        <div class="tech-list">
+
+          <span>Angular</span>
+
+          <span>Capacitor</span>
+
+          <span>HTML5</span>
+
+          <span>CSS3</span>
+
+          <span>TypeScript</span>
+
+        </div>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <ion-button
+      expand="block"
+      class="start-button"
+      (click)="explorarComponentes()">
+
+      🚀 EXPLORAR COMPONENTES
+
+    </ion-button>
+
+  </div>
+
 </ion-content>
