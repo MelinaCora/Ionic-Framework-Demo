@@ -1,17 +1,157 @@
-<ion-header [translucent]="true">
+<ion-header class="custom-header">
+
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+
+    <div class="toolbar-content">
+
+      <div>
+
+        <h1 class="app-title">
+
+          <ion-icon name="hardware-chip-outline"></ion-icon>
+
+          Capacitor
+
+        </h1>
+
+        <span class="app-subtitle">
+
+          APIs Nativas de Android
+
+        </span>
+
+      </div>
+
+      <div class="version-chip">
+
+        Native
+
+      </div>
+
+    </div>
+
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="page-container">
+
+    <!-- HERO -->
+
+    <div class="hero-card">
+
+      <ion-icon
+        name="hardware-chip-outline"
+        class="hero-icon">
+      </ion-icon>
+
+      <h1>Capacitor Bridge</h1>
+
+      <h2>Conectando Ionic con Android</h2>
+
+      <p>
+
+        Capacitor permite acceder a las funciones nativas del
+        dispositivo utilizando TypeScript. En esta demostración
+        utilizaremos Geolocalización, Información del Dispositivo
+        y Cámara.
+
+      </p>
+
+    </div>
+
+    <!-- BOTONES -->
+
+    <ion-card class="action-card">
+
+      <ion-card-content>
+
+        <ion-button
+          expand="block"
+          class="native-button"
+          (click)="obtenerUbicacion()">
+
+          <ion-icon
+            slot="start"
+            name="location-outline">
+          </ion-icon>
+
+          Obtener Ubicación
+
+        </ion-button>
+
+        <ion-button
+          expand="block"
+          class="native-button"
+          (click)="obtenerDispositivo()">
+
+          <ion-icon
+            slot="start"
+            name="phone-portrait-outline">
+          </ion-icon>
+
+          Información del Dispositivo
+
+        </ion-button>
+
+        <ion-button
+          expand="block"
+          class="native-button"
+          (click)="abrirCamara()">
+
+          <ion-icon
+            slot="start"
+            name="camera-outline">
+          </ion-icon>
+
+          Abrir Cámara
+
+        </ion-button>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- RESULTADO -->
+
+    <ion-card
+      class="result-card"
+      *ngIf="informacion">
+
+      <ion-card-content>
+
+        <h3>
+
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+          Resultado
+
+        </h3>
+
+        <pre>{{ informacion }}</pre>
+
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- FOTO -->
+
+    <ion-card
+      class="photo-card"
+      *ngIf="foto">
+
+      <ion-card-content>
+
+        <img
+          [src]="foto"
+          class="photo-preview">
+
+      </ion-card-content>
+
+    </ion-card>
+
+  </div>
+
 </ion-content>
